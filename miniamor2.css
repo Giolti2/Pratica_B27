@@ -1,0 +1,180 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  font-family: courier-std, monospace;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: none;
+  flex-direction: row;
+}
+
+.content.active{
+  display: flex;
+}
+
+.weeks{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 16vh;
+  left: 0;
+  width: 20vw;
+}
+
+.weeks-filler{
+  width: 20vw;
+}
+
+.date{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.date+.date{
+  border-top: solid black 1px;
+}
+
+.reports{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.report+.report{
+  border-top: solid black 1px;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 16vh;
+  background-color: #DDDDDD;
+}
+
+.page-filler{
+  height: 16vh;
+}
+
+.header-row{
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+#logo img{
+  height: 100%;
+}
+
+#title{
+  display: flex;
+  align-items: center;
+}
+
+.header-filler{
+  width: 20vw;
+}
+
+.folder{
+  width: 20%;
+  border-radius: 5vw 5vw 0 0;
+}
+
+#folder0.inactive{
+  background-color: #FF0000;
+}
+
+#folder1.inactive{
+  background-color: #00FF00;
+}
+
+#folder2.inactive{
+  background-color: #0000FF;
+}
+
+#folder3.inactive{
+  background-color: #FFFF00;
+}
+
+.folder.active{
+  background-color: #FFFFFF;
+}
+
+.footer-filler{
+  height: 8vh;
+}
+
+.footer{
+  position: fixed;
+  bottom: -50vh;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 58vh;
+  transform: translateY(0);
+  transition: all 0.25s ease-out;
+}
+
+.footer.active{
+  transform: translateY(-50vh);
+  transition: all 0.25s ease-out;
+}
+
+.footer-row{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 8vh;
+}
+
+.footer-content{
+  height: 50vh;
+  width: 100%;
+  background-color: #99FF88;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-content>div{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-content input{
+  width: 70%;
+}
+
+#menu-btn{
+  width: 25%;
+  height: 100%;
+  border-radius: 5vw 5vw 0 0;
+  background-color: #99FF88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
