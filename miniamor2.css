@@ -169,6 +169,10 @@ body{
   width: 70%;
 }
 
+.error{
+  color: #FF0000;
+}
+
 #menu-btn{
   width: 25%;
   height: 100%;

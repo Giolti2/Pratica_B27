@@ -1,3 +1,4 @@
+//cartelle
 var folders = [
   document.getElementById("folder0"),
   document.getElementById("folder1"),
@@ -33,6 +34,7 @@ function changeFolder(args){
 
 }
 
+//menu footer
 var footerBtn = document.getElementById("menu-btn");
 var footer = document.getElementById("footer");
 
@@ -48,3 +50,42 @@ function toggleMenu(){
     footerBtn.innerHTML = "V";
   }
 }
+
+//slider soverglianza
+var sliders = [
+  document.getElementById("slider1"),
+  document.getElementById("slider2"),
+  document.getElementById("slider3")
+];
+
+for (var i = 0; i<sliders.length; i++){
+  sliders[i].tag = document.getElementById("value"+parseInt(i+1));
+  sliders[i].addEventListener("input", updateSliders);
+}
+
+var values = [];
+
+for (var i = 0; i<sliders.length; i++){
+  values.push(parseInt(sliders[i].value*5));
+  sliders[i].tag.innerHTML = values[i];
+}
+
+var totalTag = document.getElementById("total");
+
+function updateSliders(){
+  for (var i = 0; i<sliders.length; i++){
+    values[i] = parseInt(sliders[i].value*5);
+    sliders[i].tag.innerHTML = values[i];
+  }
+  var total = values[0]+values[1]+values[2]
+  totalTag.innerHTML = total;
+  if(total!=100){
+    totalTag.classList.add("error");
+  }
+  else{
+    totalTag.classList.remove("error");
+  }
+}
+
+updateSliders();
+console.log(values);
