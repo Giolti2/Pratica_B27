@@ -71,19 +71,26 @@ a{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 16vh;
+  height: 12vh;
   background-color: #AAAAAA;
 }
 
 .page-filler{
-  height: 16vh;
+  height: 12vh;
 }
 
-.header-row{
+.header-row1{
   display: flex;
   align-content: center;
   width: 100%;
-  height: 50%;
+  height: 66%;
+}
+
+.header-row2{
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 33%;
 }
 
 #logo img{
