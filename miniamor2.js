@@ -37,17 +37,18 @@ function changeFolder(args){
 //menu footer
 var footerBtn = document.getElementById("menu-btn");
 var footer = document.getElementById("footer");
+var footerArrow = footerBtn.children[0];
 
 footerBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu(){
   if(footer.classList.contains("active")){
     footer.classList.remove("active");
-    footerBtn.innerHTML = "^";
+    footerArrow.innerHTML = "expand_less"
   }
   else{
     footer.classList.add("active");
-    footerBtn.innerHTML = "V";
+    footerArrow.innerHTML = "expand_more"
   }
 }
 
@@ -67,7 +68,7 @@ var values = [];
 
 for (var i = 0; i<sliders.length; i++){
   values.push(parseInt(sliders[i].value*5));
-  sliders[i].tag.innerHTML = values[i];
+  sliders[i].tag.innerHTML = values[i] + "%";
 }
 
 var totalTag = document.getElementById("total");
@@ -75,10 +76,10 @@ var totalTag = document.getElementById("total");
 function updateSliders(){
   for (var i = 0; i<sliders.length; i++){
     values[i] = parseInt(sliders[i].value*5);
-    sliders[i].tag.innerHTML = values[i];
+    sliders[i].tag.innerHTML = values[i] + "%";
   }
   var total = values[0]+values[1]+values[2]
-  totalTag.innerHTML = total;
+  totalTag.innerHTML = total + "%";
   if(total!=100){
     totalTag.classList.add("error");
   }
