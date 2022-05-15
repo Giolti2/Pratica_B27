@@ -96,7 +96,7 @@ function newInfo(subject){
   container.reports = container.getElementsByClassName("reports")[0];
 
   container.reports.append(newReport(subject));
-  container.weeks.append(newWeek(subject));
+  //container.weeks.append(newWeek(subject));
 }
 
 function newWeek(subject){
@@ -120,6 +120,7 @@ function newReport(subject){
 
   var anchor = document.createElement("a");
   anchor.name = subject + "w0";
+  anchor.innerHTML = "<b>SETTIMANA " + 1 + "</b><br><br>"
 
   report.append(anchor);
   report.innerHTML += text;

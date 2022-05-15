@@ -22,6 +22,7 @@ a{
 .content {
   display: none;
   flex-direction: row;
+  gap: 2vw;
 }
 
 .content.active{
@@ -32,7 +33,7 @@ a{
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 12vh;
+  top: 14vh;
   left: 0;
   width: 20vw;
 }
@@ -72,31 +73,34 @@ a{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 12vh;
+  height: 14vh;
   background-color: #AAAAAA;
+  box-shadow: 0 2px #FFFFFF;
 }
 
 .page-filler{
-  height: 12vh;
+  height: 15vh;
 }
 
 .header-row1{
   display: flex;
   align-content: center;
   width: 100%;
-  height: 66%;
+  height: 8vh;
   gap: 5vw;
+  padding-left: 2vh;
+  padding-top: 2vh;
 }
 
 .header-row2{
   display: flex;
   align-content: center;
   width: 100%;
-  height: 35%;
+  height: 4vh;
 }
 
 #logo{
-  margin: 1vw;
+
 }
 
 #logo img{
@@ -130,7 +134,7 @@ a{
 
 .folder.active{
   background-color: #FFFFFF;
-  border-bottom: 5px solid #FFFFFF;
+  box-shadow: 0 2px #FFFFFF;
 }
 
 .footer-filler{
