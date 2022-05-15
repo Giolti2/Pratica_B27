@@ -89,3 +89,42 @@ function updateSliders(){
 }
 
 updateSliders();
+
+function newInfo(subject){
+  var container = document.getElementById("content"+subject);
+  container.weeks = container.getElementsByClassName("weeks")[0];
+  container.reports = container.getElementsByClassName("reports")[0];
+
+  container.reports.append(newReport(subject));
+  container.weeks.append(newWeek(subject));
+}
+
+function newWeek(subject){
+  var date = document.createElement("div");
+  date.classList.add("date");
+
+  var anchor = document.createElement("a");
+  anchor.href = "#" + subject + "w0";
+
+  anchor.innerHTML = "Settimana " + 1;
+  date.append(anchor);
+
+  return date;
+}
+
+function newReport(subject){
+  var text = s1w1a;
+
+  var report = document.createElement("div");
+  report.classList.add("report");
+
+  var anchor = document.createElement("a");
+  anchor.name = subject + "w0";
+
+  report.append(anchor);
+  report.innerHTML += text;
+
+  return report;
+}
+
+newInfo(0);
