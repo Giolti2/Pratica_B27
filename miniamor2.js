@@ -79,7 +79,7 @@ function updateSliders(){
     sliders[i].tag.innerHTML = values[i] + "%";
   }
   var total = values[0]+values[1]+values[2]
-  totalTag.innerHTML = total + "%";
+  totalTag.innerHTML = "Totale: " + total + "%";
   if(total!=100){
     totalTag.classList.add("error");
   }
@@ -89,4 +89,3 @@ function updateSliders(){
 }
 
 updateSliders();
-console.log(values);
