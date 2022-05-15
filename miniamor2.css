@@ -59,11 +59,13 @@ a{
 .reports{
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 75vw;
+  gap: 2vh;
 }
 
 .report+.report{
   border-top: solid black 1px;
+  padding-top: 2vh;
 }
 
 .header{
