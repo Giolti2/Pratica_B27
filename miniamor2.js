@@ -176,25 +176,27 @@ var week = 0;
 var sendButton = document.getElementById("send");
 
 function send(){
-  if(week == 0){
-    for(var i = 0; i < contents.length-1; i++){
-      contents[i].getElementsByClassName("reports")[0].innerHTML = "";
+  if(total == 100){
+    if(week == 0){
+      for(var i = 0; i < contents.length-1; i++){
+        contents[i].getElementsByClassName("reports")[0].innerHTML = "";
+      }
     }
-  }
 
-  for(var i = 0; i < guardHistory.length; i++){
-    guardHistory[i][week] = 0;
-  }
-  guardHistory[guarded][week] = 1;
+    for(var i = 0; i < guardHistory.length; i++){
+      guardHistory[i][week] = 0;
+    }
+    guardHistory[guarded][week] = 1;
 
-  newInfo(0);
-  newInfo(1);
-  newInfo(2);
-  news();
-  week += 1;
+    newInfo(0);
+    newInfo(1);
+    newInfo(2);
+    news();
+    week += 1;
 
-  if (week > 3){
-    changeMenu();
+    if (week > 3){
+      changeMenu();
+    }
   }
 }
 
