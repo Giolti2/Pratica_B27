@@ -122,6 +122,7 @@ for (var i = 0; i<sliders.length; i++){
   values.push(parseInt(sliders[i].value*5));
   sliders[i].tag.innerHTML = values[i] + "%";
 }
+var total;
 
 var totalTag = document.getElementById("total");
 
@@ -130,7 +131,7 @@ function updateSliders(){
     values[i] = parseInt(sliders[i].value*5);
     sliders[i].tag.innerHTML = values[i] + "%";
   }
-  var total = values[0]+values[1]+values[2]
+  total = values[0]+values[1]+values[2]
   totalTag.innerHTML = "Totale: " + total + "%";
   if(total!=100){
     totalTag.classList.add("error");
