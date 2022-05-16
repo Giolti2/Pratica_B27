@@ -1,0 +1,14 @@
+var s1w4a2 = `<b>MERCOLEDÌ</b><br>
+
+7:15 sveglia - rasatura - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #87013 (MINSON PETER): toni neutri - tragitto in compagnia di soggetto #87013 (MINSON PETER) - entrata MINISTERO DELLA VERITÀ: scambio saluti con #92873 (FOX ANNIE): toni affettuosi - 8:25 posizionamento postazione di impiego - inizio mansione: revisione pellicola F096 - termine mansione: revisione pellicola F095<br><br>
+
+12:00 pausa pranzo mensa MINISTERO DELLA VERITÀ: #88342 (BROWN RONALD): toni scherzosi - fine pausa pranzo - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ - tragitto in solitudine<br><br>
+
+19:09 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #73921 (ORNSTEIN EMMA), soggetto #87013 (MINSON PETER), #86502 (HANCOCK ALEX), #75293 (GRANT FINN): discussione riguardo alle presenze all’attività domenicale: estratto conversazione [...scusa Emma ma domenica proprio non posso, ma voialtri non fatevi scoraggiare dalla mia assenza...] - 21:23 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso grande fratello C089, notiziario K245 - pulizia serale - 22:25 riposo notturno<br><br>
+
+<b>DOMENICA</b><br>
+8:00 sveglia - rasatura - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #87013 (MINSON PETER), soggetto #73921 (ORNSTEIN EMMA): giutificazione per mancata partecipazione alla gita domenicale - ritorno in alloggio - visione teleschermo: notiziario H203 - uscita CONDOMINIO VITTORIA 111 - arrivo Mercato Nero: acquisti mercato nero: 13 sigarette - consumo sigarette: quantità: 1 - 12:44 entrata CONDOMINIO VITTORIA 111 <br><br>
+
+12:50 pausa pranzo: colloquio con soggetto colloquio con #709011(ROGAN LANA): scuse per il ritardo al pasto - 14:30 uscita  CONDOMINIO VITTORIA 111 -tragitto in solitudine - entrata BAR DELL’OLMO: conversazione con prolet all’entrata: scambio di frasi prive di senso - 15:17 entrata BAR DELL’OLMO: fine area audio/video sorveglianza - 17:26 uscita BAR DELL’OLMO: inizio area di azione di video/audio sorveglianza - tragitto in solitudine - 18:31 entrata CONDOMINIO VITTORIA 111<br><br>
+
+19:00 pasto serale mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #87013 (MINSON PETER): toni arrabbiati- 21:27 ritiro nei propri alloggi - consumo sigarette: quantità: 2 - 22:05 soggetto #73921 (ORNSTEIN EMMA) bussa alla porta - accesso del soggetto #73921 (ORNSTEIN EMMA) nell’alloggio: giustificazioni: estratto conversazione [...Emma non so di cosa tu stia parlando, ti assicuro che il lavandino era guasto...] - consumo sigarette: quantità: 3 - pulizia serale - 23:15 riposo notturno`

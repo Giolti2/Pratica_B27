@@ -1,3 +1,55 @@
+//footer sostitutivo
+
+var footer2 = `
+<div class="subject">
+  <div class="input-field">
+    <div class="nametag">ANDREW DICK</div>
+    <button id="button1-2">Segnala</button>
+  </div>
+</div>
+<div class="subject">
+  <div class="input-field">
+    <div class="nametag">PETER MINSON</div>
+    <button id="button2-2">Segnala</button>
+  </div>
+</div>
+<div class="subject">
+  <div class="input-field">
+    <div class="nametag">EMMA ORNSTEIN</div>
+    <button id="button3-2">Segnala</button>
+  </div>
+</div>
+<div id="total"></div>
+<div>
+  <button id="send-2">INVIA</button>
+</div>
+`
+
+//seganalazioni
+
+var reportButtons = [
+  document.getElementById("button1-2"),
+  document.getElementById("button2-2"),
+  document.getElementById("button3-2")
+];
+
+var reported = [0,0,0];
+
+for(var i = 0; i < reportButtons.length; i++){
+  reportButtons[i].addEventListener("click", reportSubject);
+  reportButtons[i].subject = i;
+}
+
+function reportSubject(args){
+  reported[args.target.subject] = 1 - reported[args.target.subject];
+  if(args.target.classList.contains("active")){
+    args.target.classList.remove("active")
+  }
+  else{
+    args.target.classList.add("active")
+  }
+}
+
 //cartelle
 var folders = [
   document.getElementById("folder0"),
@@ -103,6 +155,7 @@ for (var i = 0; i < guardButtons.length; i++){
 }
 
 var guarded = 0;
+var guardHistory = [ [], [], [] ];
 
 function activateGuard(args){
   var index = args.target.id[args.target.id.length-1] - 1;
@@ -124,18 +177,35 @@ var sendButton = document.getElementById("send");
 
 function send(){
   if(week == 0){
-    for(var i = 0; i < contents.length; i++){
+    for(var i = 0; i < contents.length-1; i++){
       contents[i].getElementsByClassName("reports")[0].innerHTML = "";
     }
   }
+
+  for(var i = 0; i < guardHistory.length; i++){
+    guardHistory[i][week] = 0;
+  }
+  guardHistory[guarded][week] = 1;
+
   newInfo(0);
   newInfo(1);
-  //newInfo(2);
-  //news();
+  newInfo(2);
+  news();
   week += 1;
+
+  if (week > 3){
+    changeMenu();
+  }
 }
 
 sendButton.addEventListener("click", send);
+
+//finale
+
+function changeMenu(){
+  document.getElementById("footer1").style.display = "none"
+  document.getElementById("footer2").style.display = "flex"
+}
 
 //generazione testi
 
@@ -151,12 +221,18 @@ function newInfo(subject){
   }
 }
 
+function news(){
+  var container = document.getElementById("news");
+  var temp = "n"+parseInt(week+1)
+  container.innerHTML = window[temp];
+}
+
 function newWeek(subject){
   var date = document.createElement("div");
   date.classList.add("date");
 
   var anchor = document.createElement("a");
-  anchor.href = "#" + subject + "w0";
+  anchor.href = "#" + subject + "w" + week;
 
   anchor.innerHTML = "Settimana " + parseInt(week + 1);
   date.append(anchor);
@@ -171,7 +247,7 @@ function newReport(subject){
   report.classList.add("report");
 
   var anchor = document.createElement("a");
-  anchor.name = subject + "w0";
+  anchor.name = subject + "w" + week;
   anchor.innerHTML = "<b>SETTIMANA " + parseInt(week + 1) + "</b><br><br>"
 
   report.append(anchor);
@@ -209,8 +285,12 @@ function chooseGuardText(subject){
       file += "s1b"+parseInt(week+1);
       break;
     case 1:
+      file += "s2b";
+      file += guardHistory[1].reduce((partialSum, a) => partialSum + a, 0);
       break;
     case 2:
+    file += "s3b";
+    file += guardHistory[2].reduce((partialSum, a) => partialSum + a, 0);
       break;
   }
 
@@ -219,54 +299,60 @@ function chooseGuardText(subject){
 }
 
 function andrewDick(){
-  var file = "s1";
-  switch(week){
-    case 0:
-      file += "w1";
-      if(values[0]<=25){
-        file += "a1";
-      }
-      else if(values[0]<=45){
-        file += "a2";
-      }
-      else{
-        file += "a3";
-      }
-      break;
-    case 1:
-      break;
-    case 2:
-      break;
-    case 3:
-      break;
-  };
+  var file = "s1w"+parseInt(week+1);
+
+  if(values[0]<=25){
+    file += "a1";
+  }
+  else if(values[0]<=45){
+    file += "a2";
+  }
+  else{
+    file += "a3";
+  }
+
+  if(week > 0 && week < 3 && guardHistory[0][parseInt(week-1)]){
+    file += "x";
+  }
 
   console.log(file);
   return window[file];
 }
 
 function peterMinson(){
-  var file = "s2";
-  switch(week){
-    case 0:
-      file += "w1";
-      if(values[0]<=25){
-        file += "a1";
-      }
-      else if(values[0]<=45){
-        file += "a2";
-      }
-      else{
-        file += "a3";
-      }
-      break;
-    case 1:
-      break;
-    case 2:
-      break;
-    case 3:
-      break;
-  };
+  var file = "s2w"+parseInt(week+1);;
+
+  if(values[1]<=25){
+    file += "a1";
+  }
+  else if(values[1]<=45){
+    file += "a2";
+  }
+  else{
+    file += "a3";
+  }
+
+  if(week == 1 && guardHistory[0][parseInt(week-1)]){
+    file += "x";
+  }
+
+  console.log(file);
+  return window[file];
+}
+
+function emmaOrnstein(){
+  var file = "s3w"+parseInt(week+1);
+
+  if(values[2]<=45){
+    file += "a1";
+  }
+  else{
+    file += "a2";
+  }
+
+  if(week > 0 && week < 3 && guardHistory[0][parseInt(week-1)]){
+    file += "x";
+  }
 
   console.log(file);
   return window[file];

@@ -1,0 +1,5 @@
+var s2b2 = `Ho continuato ad incontrare il soggetto #87013 (MINSON PETER) in mensa, ritarda leggermente le sue mansioni per passare piu tempo in mia presenza. Sembra sempre piu interessato, ha infatti iniziato a parlare sempre piu nel dettaglio di se stesso.<br><br>
+Ribadisco il suo interesse per il soggetto #80085 (DICK ANDREW), che cita spesso nei suoi discorsi. Racconta spesso aneddoti lavorativi, tra i quali mi sento in dovere di riportarne uno. Pare infatti che il soggetto #87013 (MINSON PETER), in maniera del tutto erronea, per distrazione, abbia gettato nell’inceneritore per gli appunti della carta da naso, oltre ai propri fogli, e questo, non avendo rilevato differenza nei rifiuti ha contato 4 fogli scartati invece che 3, permettendogli comunque di ricevere i documenti successivi.<br><br>
+
+Conoscendo personalmente il soggetto e la sua maldestria non mi sento di indicare l’azione come atto di psicocriminalità, ma invito la pronta correzione di qesto malfunzionamento negli inceneritori; approfondirò l’argomento con il soggetto  qualora mi sarà data la possibilità
+`

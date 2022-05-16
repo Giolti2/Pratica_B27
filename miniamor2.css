@@ -179,6 +179,14 @@ a{
   font-size: 1.3em;
 }
 
+#footer1 {
+  display: flex;
+}
+
+#footer2 {
+  display: none;
+}
+
 .input-field{
   width: 80%;
   display: flex;
@@ -241,7 +249,7 @@ a{
   padding-right: 2vw;
 }
 
-#send{
+#send, #send-2{
   width: 20vw;
   height: 6vh;
   font-size: 1em;
