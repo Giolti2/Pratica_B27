@@ -68,6 +68,14 @@ a{
   padding-top: 2vh;
 }
 
+#ending {
+  display: none;
+}
+
+#end-report {
+  padding-left: 2vh;
+}
+
 .header{
   position: fixed;
   top: 0;

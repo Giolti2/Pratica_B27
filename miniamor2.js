@@ -42,12 +42,81 @@ for(var i = 0; i < reportButtons.length; i++){
 
 function reportSubject(args){
   reported[args.target.subject] = 1 - reported[args.target.subject];
+
   if(args.target.classList.contains("active")){
     args.target.classList.remove("active")
   }
   else{
     args.target.classList.add("active")
   }
+
+}
+
+document.getElementById("send-2").addEventListener("click", reportConfirm);
+
+function reportConfirm(){
+
+  var temp = document.getElementsByClassName("folder");
+
+  for(var i = 0; i < temp.length; i++){
+    temp[i].style.display = "none";
+    console.log(temp[i])
+  }
+
+  temp = document.getElementsByClassName("content");
+
+  for(var i = 0; i < temp.length; i++){
+    temp[i].style.display = "none";
+    console.log(temp[i])
+  }
+
+  document.getElementById("footer").style.display = "none";
+
+  if(!reported[0] && reported[2]){ //finale rivoluzione
+    document.getElementsByClassName("header")[0].style.display = "none";
+  }
+
+  var file = "e";
+
+  console.log(reported.toString());
+  switch(reported.toString()){
+    case "0,0,0":
+      file += "0";
+      break;
+    case "0,0,1":
+      file += "r";
+      break;
+    case "0,1,0":
+      file += "2";
+      break;
+    case "0,1,1":
+      file += "r";
+      break;
+    case "1,0,0":
+      file += "4";
+      break;
+    case "1,0,1":
+      file += "5";
+      break;
+    case "1,1,0":
+      file += "6";
+      break;
+    case "1,1,1":
+      file += "7";
+      break;
+  }
+
+  document.getElementById("ending").style.display = "flex";
+
+  var text = document.createElement("div");
+  text.classList.add("report");
+  text.id = "end-report";
+  console.log(file)
+  console.log(window[file])
+  text.innerHTML = window[file];
+
+  document.getElementById("ending").children[0].append(text);
+
 }
 
 //cartelle
