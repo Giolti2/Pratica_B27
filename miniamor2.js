@@ -54,7 +54,11 @@ function reportSubject(args){
 
 document.getElementById("send-2").addEventListener("click", reportConfirm);
 
+var ending = 0;
+
 function reportConfirm(){
+
+  ending = 1;
 
   var temp = document.getElementsByClassName("folder");
 
@@ -116,6 +120,8 @@ function reportConfirm(){
   text.innerHTML = window[file];
 
   document.getElementById("ending").children[0].append(text);
+
+  localStorage.clear();
 
 }
 
@@ -241,6 +247,8 @@ function activateGuard(args){
 
 //invio
 
+var survHistory = [[],[],[]];
+
 var week = 0;
 
 var sendButton = document.getElementById("send");
@@ -258,6 +266,11 @@ function send(){
     }
     guardHistory[guarded][week] = 1;
 
+    for(var i = 0; i < values.length; i++){
+      survHistory[i][week] = values[i];
+    }
+    console.log(survHistory);
+
     newInfo(0);
     newInfo(1);
     newInfo(2);
@@ -267,6 +280,8 @@ function send(){
     if (week > 3){
       changeMenu();
     }
+
+    saveGame();
   }
 }
 
@@ -304,7 +319,16 @@ function newWeek(subject){
   date.classList.add("date");
 
   var anchor = document.createElement("a");
-  anchor.href = "#" + subject + "w" + week;
+
+  anchor.destination = subject+"w"+week;
+
+  anchor.addEventListener("click", function(args){
+    window.scrollTo({
+      top: document.getElementById(args.target.destination).getBoundingClientRect().top - (window.innerHeight*0.15),
+      left: 0,
+      behavior: "smooth"
+    });
+  });
 
   anchor.innerHTML = "Settimana " + parseInt(week + 1);
   date.append(anchor);
@@ -319,7 +343,7 @@ function newReport(subject){
   report.classList.add("report");
 
   var anchor = document.createElement("a");
-  anchor.name = subject + "w" + week;
+  anchor.id = subject + "w" + week;
   anchor.innerHTML = "<b>SETTIMANA " + parseInt(week + 1) + "</b><br><br>"
 
   report.append(anchor);
@@ -373,10 +397,10 @@ function chooseGuardText(subject){
 function andrewDick(){
   var file = "s1w"+parseInt(week+1);
 
-  if(values[0]<=25){
+  if(survHistory[0][week]<=25){
     file += "a1";
   }
-  else if(values[0]<=45){
+  else if(survHistory[0][week]<=45){
     file += "a2";
   }
   else{
@@ -394,10 +418,10 @@ function andrewDick(){
 function peterMinson(){
   var file = "s2w"+parseInt(week+1);;
 
-  if(values[1]<=25){
+  if(survHistory[1][week]<=25){
     file += "a1";
   }
-  else if(values[1]<=45){
+  else if(survHistory[1][week]<=45){
     file += "a2";
   }
   else{
@@ -415,7 +439,7 @@ function peterMinson(){
 function emmaOrnstein(){
   var file = "s3w"+parseInt(week+1);
 
-  if(values[2]<=45){
+  if(survHistory[2][week]<=45){
     file += "a1";
   }
   else{
@@ -428,4 +452,50 @@ function emmaOrnstein(){
 
   console.log(file);
   return window[file];
+}
+
+var save = localStorage.getItem("save");
+
+if(save != null){
+  save = JSON.parse(save);
+  guardHistory = save.guardHistory;
+  survHistory = save.survHistory;
+  reported = save.reported;
+  ending = save.ending;
+  init();
+}
+
+function init(){
+
+  var savedWeek = save.savedWeek;
+
+  if(!ending){
+    for(var i = 0; i < contents.length-1; i++){
+      contents[i].getElementsByClassName("reports")[0].innerHTML = "";
+    }
+
+    for(week = 0; week < savedWeek; week++){
+      newInfo(0);
+      newInfo(1);
+      newInfo(2);
+      news();
+    }
+
+    if(week > 3){
+      changeMenu();
+    }
+  }
+
+}
+
+function saveGame(){
+  save = {
+    guardHistory: guardHistory,
+    survHistory: survHistory,
+    savedWeek: week,
+    reported: reported,
+    ending: ending
+  }
+
+  localStorage.setItem("save", JSON.stringify(save));
 }
