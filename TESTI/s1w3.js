@@ -1,0 +1,93 @@
+var s1w3a1 = `<b>MARTEDÌ</b><br>
+7:15 sveglia - rasatura - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #75293 (GRANT FINN): nessuna informazione - entrata MINISTERO DELLA VERITÀ: scambio saluti con #92873 (FOX ANNIE) - 8:27 posizionamento postazione di impiego - inizio mansione: preparazione materiale audiovisivo destinato ai prolet - termine mansione: preparazione materiale audiovisivo destinato ai prolet - 9:31 partenza da MINISTERO DELLA VERITÀ - 10:08 entrata BAR DELL’OLMO: fine area di azione di video/audio sorveglianza<br><br>
+
+12:01 uscita BAR DELL’OLMO: inizio area di azione di video/audio sorveglianza - 12:30 entrata MINISTERO DELLA VERITÀ - posizionamento postazione di impiego: deposito materiale ottenuto - inizio mansione: registrazione indice di gradimento prolet - termine mansione: registrazione indice di gradimento prolet - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ<br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111 - incontro con soggetto #73921 (ORNSTEIN EMMA), #86502 (HANCOCK ALEX): nessuna informazione - 21:04 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso Grande Fratello C114, notiziario K237 - pulizia serale - 22:26 riposo notturno<br><br>
+
+<b>VENERDÌ</b><br>
+7:15 sveglia - rasatura - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #87013 (MINSON PETER), soggetto #73921 (ORNSTEIN EMMA): nessuna informazione - entrata MINISTERO DELLA VERITÀ: scambio saluti con #67223 (ANDERSON THOMAS) - 8:31 posizionamento postazione di impiego - inizio mansione: revisione pellicola F002 - pausa per servizi igenici: incontro con soggetto #87013 (MINSON PETER) - termine mansione: revisione pellicola F002  <br><br>
+
+12:00 pausa pranzo mensa MINISTERO DELLA VERITÀ: colloquio con #92873(FOX ANNIE), #88342 (BROWN RONALD): nessuna informazione - fine pausa pranzo - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ <br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #73921 (ORNSTEIN EMMA): nessuna informazione - 21:23 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso grande fratello C032, notiziario K240 - pulizia serale - 22:40 riposo notturno
+`;
+
+var s1w3a1x = `<b>MARTEDÌ</b><br>
+7:15 sveglia - rasatura - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #75293 (GRANT FINN): nessuna informazione - entrata MINISTERO DELLA VERITÀ: scambio saluti con #92873 (FOX ANNIE) - 8:27 posizionamento postazione di impiego - inizio mansione: preparazione materiale audiovisivo destinato ai prolet - termine mansione: preparazione materiale audiovisivo destinato ai prolet - 9:31 partenza da MINISTERO DELLA VERITÀ - 10:08 entrata BAR DELL’OLMO: fine area di azione di video/audio sorveglianza<br><br>
+
+12:01 uscita BAR DELL’OLMO: inizio area di azione di video/audio sorveglianza - 12:30 entrata MINISTERO DELLA VERITÀ - posizionamento postazione di impiego: deposito materiale ottenuto - inizio mansione: registrazione indice di gradimento prolet - termine mansione: registrazione indice di gradimento prolet - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ<br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111 - incontro con soggetto #73921 (ORNSTEIN EMMA), #86502 (HANCOCK ALEX): nessuna informazione - 21:04 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso Grande Fratello C114, notiziario K237 - pulizia serale - 22:26 riposo notturno<br><br>
+
+<b>VENERDÌ</b><br>
+7:15 sveglia - rasatura - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #87013 (MINSON PETER), soggetto #73921 (ORNSTEIN EMMA): nessuna informazione - entrata MINISTERO DELLA VERITÀ: scambio saluti con #67223 (ANDERSON THOMAS) - 8:31 posizionamento postazione di impiego - inizio mansione: revisione pellicola F002 - termine mansione: revisione pellicola F002  <br><br>
+
+12:00 pausa pranzo mensa MINISTERO DELLA VERITÀ: colloquio con #92873(FOX ANNIE), #88342 (BROWN RONALD): nessuna informazione - fine pausa pranzo - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ <br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #73921 (ORNSTEIN EMMA): nessuna informazione - 21:23 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso grande fratello C032, notiziario K240 - soggetto #87013 (MINSON PETER): bussa alla porta - pulizia serale - 22:40 riposo notturno
+`;
+
+var s1w3a2 = `<b>MARTEDÌ</b><br>
+7:15 sveglia - rasatura - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con #75293 (GRANT FINN): toni scherzosi - tragitto in solitudine - entrata MINISTERO DELLA VERITÀ - scambio saluti con #92873 (FOX ANNIE): toni affettuosi -  8:27 posizionamento postazione di impiego - inizio mansione: preparazione materiale audiovisivo destinato ai prolet: pellicola D440, 3 fogli per annotazion - termine mansione: preparazione materiale audiovisivo destinato ai prolet - 9:31 partenza da MINISTERO DELLA VERITÀ - tragitto in solitudine - 10:08 entrata BAR DELL’OLMO: fine area di azione di video/audio sorveglianza<br><br>
+
+12:00 soggetto non presente in pausa pranzo - 12:01 uscita BAR DELL’OLMO: inizio area di azione di video/audio sorveglianza - tragitto in solitudine - 12:30 entrata MINISTERO DELLA VERITÀ - posizionamento postazione di impiego: deposito materiale ottenuto: pellicola E993, 3 fogli per annotazioni- inizio mansione: registrazione indice di gradimento prolet - termine mansione: registrazione indice di gradimento prolet - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ - tragitto in solitudine<br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111 - incontro con soggetto #73921 (ORNSTEIN EMMA), #86502 (HANCOCK ALEX): toni di incoraggiamento - 21:04 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso Grande Fratello C114, notiziario K237 - pulizia serale - 22:26 riposo notturno<br><br>
+
+<b>VENERDÌ</b><br>
+7:15 sveglia - rasatura - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #87013 (MINSON PETER), soggetto #73921 (ORNSTEIN EMMA): conversazione sulla giornata di lavoro - tragitto in compagnia del soggetto #87013 (MINSON PETER) - entrata MINISTERO DELLA VERITÀ: scambio saluti con #67223 (ANDERSON THOMAS) - 8:31 posizionamento postazione di impiego - inizio mansione: revisione pellicola F002 - pausa per servizi igenici: incontro con soggetto #87013 (MINSON PETER): saluto con stretta di mano - termine mansione: revisione pellicola F002  <br><br>
+
+12:00 pausa pranzo mensa MINISTERO DELLA VERITÀ: colloquio con #92873(FOX ANNIE), #88342 (BROWN RONALD): conversazione riguardo alla pellicola F025 - fine pausa pranzo - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ - tragitto in solitudine<br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #73921 (ORNSTEIN EMMA): discorso riguardante il soggetto #87013 (MINSON PETER) - 21:23 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso grande fratello C032, notiziario K240 - pulizia serale - 22:40 riposo notturno
+`;
+
+var s1w3a2x = `<b>MARTEDÌ</b><br>
+7:15 sveglia - rasatura - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto#75293 (GRANT FINN): toni scherzosi - tragitto in solitudine - entrata MINISTERO DELLA VERITÀ - scambio saluti con #92873 (FOX ANNIE): toni affettuosi - 8:27 posizionamento postazione di impiego - inizio mansione: preparazione materiale audiovisivo destinato ai prolet: pellicola D440, 3 fogli per annotazion - termine mansione: preparazione materiale audiovisivo destinato ai prolet - 9:31 partenza da MINISTERO DELLA VERITÀ - tragitto in solitudine - 10:08 entrata BAR DELL’OLMO: fine area di azione di video/audio sorveglianza<br><br>
+
+12:00 soggetto non presente in pausa pranzo - 12:01 uscita BAR DELL’OLMO: inizio area di azione di video/audio sorveglianza - tragitto in solitudine - 12:30 entrata MINISTERO DELLA VERITÀ - posizionamento postazione di impiego: deposito materiale ottenuto: pellicola E993, 3 fogli per annotazioni- inizio mansione: registrazione indice di gradimento prolet - termine mansione: registrazione indice di gradimento prolet - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ - tragitto in solitudine<br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111 - incontro con soggetto #73921 (ORNSTEIN EMMA), #86502 (HANCOCK ALEX): toni di incoraggiamento - 21:04 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso Grande Fratello C114, notiziario K237 - pulizia serale - 22:26 riposo notturno<br><br>
+
+<b>VENERDÌ</b><br>
+7:15 sveglia - rasatura - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #87013 (MINSON PETER), soggetto #73921 (ORNSTEIN EMMA): conversazione sulla giornata di lavoro - tragitto in compagnia del soggetto #87013 (MINSON PETER) - entrata MINISTERO DELLA VERITÀ: scambio saluti con #67223 (ANDERSON THOMAS) - 8:31 posizionamento postazione di impiego - inizio mansione: revisione pellicola F002 - termine mansione: revisione pellicola F002  <br><br>
+
+12:00 pausa pranzo mensa MINISTERO DELLA VERITÀ: colloquio con #92873(FOX ANNIE), #88342 (BROWN RONALD): conversazione riguardo alla pellicola F025 - fine pausa pranzo - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ - tragitto in solitudine<br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #73921 (ORNSTEIN EMMA): discorso riguardante il soggetto #87013 (MINSON PETER) - 21:23 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso grande fratello C032, notiziario K240 - soggetto #87013 (MINSON PETER): bussa alla porta: toni irritati - pulizia serale - 22:40 riposo notturno
+`;
+
+var s1w3a3 = `<b>MARTEDÌ</b><br>
+7:15 sveglia - rasatura - rasatura: usura rasoio 35% - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto#75293 (GRANT FINN): toni scherzosi: estratto conversazione [... allora Finn? Fatto progressi con Emma?...] - tragitto in solitudine - entrata MINISTERO DELLA VERITÀ - scambio saluti con - #92873 (FOX ANNIE): toni affettuosi: evidente interessamento della ragazza per il soggetto - 8:27 posizionamento postazione di impiego - inizio mansione: preparazione materiale audiovisivo destinato ai prolet: pellicola D440, 3 fogli per annotazioni - termine mansione: preparazione materiale audiovisivo destinato ai prolet - 9:31 partenza da MINISTERO DELLA VERITÀ - tragitto in solitudine: scambio di saluti con 4 prolet - 10:08 entrata BAR DELL’OLMO: fine area di azione di video/audio sorveglianza<br><br>
+
+12:00 soggetto non presente in pausa pranzo - 12:01 uscita BAR DELL’OLMO: inizio area di azione di video/audio sorveglianza - tragitto in solitudine - 12:30 entrata MINISTERO DELLA VERITÀ - posizionamento postazione di impiego: deposito materiale ottenuto: pellicola E993, 3 fogli per annotazioni - inizio mansione: registrazione indice di gradimento prolet - termine mansione: registrazione indice di gradimento prolet - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ - tragitto in solitudine<br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111 - incontro con soggetto #73921 (ORNSTEIN EMMA), #86502 (HANCOCK ALEX): toni di incoraggiamento: [... Dai Alex, lo sai la ginnastica ti fa bene...] - 21:04 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso Grande Fratello C114, notiziario K237 - pulizia serale - 22:26 riposo notturno<br><br>
+
+<b>VENERDÌ</b><br>
+7:15 sveglia - rasatura: usura rasoio 50% - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #87013 (MINSON PETER), soggetto #73921 (ORNSTEIN EMMA): conversazione sulla giornata di lavoro - tragitto in compagnia del soggetto #87013 (MINSON PETER): estratto conversazione [...facciamo stamattina...]- entrata MINISTERO DELLA VERITÀ: scambio saluti con #67223 (ANDERSON THOMAS) - 8:31 posizionamento postazione di impiego - inizio mansione: revisione pellicola F002 - pausa per servizi igenici: incontro con soggetto #87013 (MINSON PETER): saluto con stretta di mano - termine mansione: revisione pellicola F002  <br><br>
+
+12:00 pausa pranzo mensa MINISTERO DELLA VERITÀ: colloquio con #92873(FOX ANNIE), #88342 (BROWN RONALD): conversazione riguardo alla pellicola F025: estratto conversazione [...potrebbe essere una delle pellicole migliori a cui abbia mai lavorato...] - fine pausa pranzo - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ - tragitto in solitudine: scambio di saluti con 3 prolet<br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #73921 (ORNSTEIN EMMA): discorso riguardante il soggetto #87013 (MINSON PETER): estratto conversazione [...Emma, non sono affatto appropriate le accuse che stai muovendo contro il nostro fidato compagno...] - 21:23 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso grande fratello C032, notiziario K240 - pulizia serale - 22:40 riposo notturno
+`;
+
+var s1w3a3x = `<b>MARTEDÌ</b><br>
+7:15 sveglia - rasatura - rasatura: usura rasoio 35% - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto#75293 (GRANT FINN): toni scherzosi: estratto conversazione [...allora Finn? Fatto progressi con Emma?...] - tragitto in solitudine - entrata MINISTERO DELLA VERITÀ - scambio saluti con - #92873 (FOX ANNIE): toni affettuosi: evidente interessamento della ragazza per il soggetto - 8:27 posizionamento postazione di impiego - inizio mansione: preparazione materiale audiovisivo destinato ai prolet: pellicola D440, 3 fogli per annotazioni - termine mansione: preparazione materiale audiovisivo destinato ai prolet - 9:31 partenza da MINISTERO DELLA VERITÀ - tragitto in solitudine: scambio di saluti con 4 prolet - 10:08 entrata BAR DELL’OLMO: fine area di azione di video/audio sorveglianza<br><br>
+
+12:00 soggetto non presente in pausa pranzo - 12:01 uscita BAR DELL’OLMO: inizio area di azione di video/audio sorveglianza - tragitto in solitudine - 12:30 entrata MINISTERO DELLA VERITÀ - posizionamento postazione di impiego: deposito materiale ottenuto: pellicola E993, 3 fogli per annotazioni- inizio mansione: registrazione indice di gradimento prolet - termine mansione: registrazione indice di gradimento prolet - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ - tragitto in solitudine<br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111 - incontro con soggetto #73921 (ORNSTEIN EMMA), #86502 (HANCOCK ALEX): toni di incoraggiamento: estratto conversazione [... Dai Alex, lo sai la ginnastica ti fa bene...] - 21:04 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso Grande Fratello C114, notiziario K237 - pulizia serale - 22:26 riposo notturno<br><br>
+
+<b>VENERDÌ</b><br>
+7:15 sveglia - rasatura - ginnastica mattutina: corretta esecuzione - pasto mattutino mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #87013 (MINSON PETER), soggetto #73921 (ORNSTEIN EMMA): conversazione sulla giornata di lavoro - tragitto in compagnia del soggetto #87013 (MINSON PETER): estratto conversazione [...sono di fretta minson, non pensarci per stamattina...] - entrata MINISTERO DELLA VERITÀ: scambio saluti con #67223 (ANDERSON THOMAS) - 8:31 posizionamento postazione di impiego - inizio mansione: revisione pellicola F002 - termine mansione: revisione pellicola F002  <br><br>
+
+12:00 pausa pranzo mensa MINISTERO DELLA VERITÀ: colloquio con #92873(FOX ANNIE), #88342 (BROWN RONALD): conversazione riguardo alla pellicola F025: estratto conversazione [...potrebbe essere una delle pellicole migliori a cui abbia mai lavorato...] - fine pausa pranzo - inizio mansione: scrittura pellicola F025 - termine mansione: scrittura pellicola F025 - uscita MINISTERO DELLA VERITÀ - tragitto in solitudine: scambio di saluti con 3 prolet<br><br>
+
+19:12 entrata CONDOMINIO VITTORIA 111 - pasto serale mensa CONDOMINIO VITTORIA 111: colloquio con soggetto #73921 (ORNSTEIN EMMA): discorso riguardante il soggetto #87013 (MINSON PETER): estratto conversazione [... Emma, non sono affatto appropriate le accuse che stai muovendo contro il nostro fidato compagno...] - 21:23 ritiro nei propri alloggi - visione trasmissione teleschermo: discorso grande fratello C032, notiziario K240 - pulizia serale -  soggetto #87013 (MINSON PETER): bussa alla porta: toni irritati: estratto conversazione [...va’ a dormire Peter...] - 22:40 riposo notturno
+`
+
+var s1b3 = `Confermo l’impegno del soggetto #80085 (DICK ANDREW) durante le visite al Bar dell’Olmo, prende appunti e fa domande in maniera puntuale e diligente. L’unica stranezza rilevata è risalente alla giornata di martedì quando, durante la proiezione, l’ho perso di vista per 40 minuti circa assieme al barista.
+I due sono poi arrivati con la pellicola che il soggetto doveva ritirare, presumo quindi fosse la ricerca di questa il motivo della scomparsa dei due e del seguente ritardo di Dick al posto di lavoro. Sottolineo comunque l’anormalità dell’accaduto come possibile spunto per ulteriori indagini.
+`
