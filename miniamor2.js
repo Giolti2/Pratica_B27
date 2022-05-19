@@ -430,7 +430,7 @@ function peterMinson(){
     file += "a3";
   }
 
-  if(week == 1 && guardHistory[0][parseInt(week-1)]){
+  if(week > 0 && week < 2 && guardHistory[0][parseInt(week-1)]){
     file += "x";
   }
 
@@ -448,7 +448,7 @@ function emmaOrnstein(){
     file += "a2";
   }
 
-  if(week > 0 && week < 3 && guardHistory[0][parseInt(week-1)]){
+  if(week == 1 && guardHistory[0][parseInt(week-1)]){
     file += "x";
   }
 
