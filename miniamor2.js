@@ -323,11 +323,13 @@ function newWeek(subject){
   anchor.destination = subject+"w"+week;
 
   anchor.addEventListener("click", function(args){
+    var element = document.getElementById(args.target.destination)
     window.scrollTo({
-      top: document.getElementById(args.target.destination).getBoundingClientRect().top - (window.innerHeight*0.15),
+      top: getCoords(element).top - (window.innerHeight*0.15),
       left: 0,
       behavior: "smooth"
     });
+    return;
   });
 
   anchor.innerHTML = "Settimana " + parseInt(week + 1);
@@ -498,4 +500,22 @@ function saveGame(){
   }
 
   localStorage.setItem("save", JSON.stringify(save));
+}
+
+function getCoords(elem) { // crossbrowser version
+    var box = elem.getBoundingClientRect();
+
+    var body = document.body;
+    var docEl = document.documentElement;
+
+    var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
+    var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
+
+    var clientTop = docEl.clientTop || body.clientTop || 0;
+    var clientLeft = docEl.clientLeft || body.clientLeft || 0;
+
+    var top  = box.top +  scrollTop - clientTop;
+    var left = box.left + scrollLeft - clientLeft;
+
+    return { top: Math.round(top), left: Math.round(left) };
 }
